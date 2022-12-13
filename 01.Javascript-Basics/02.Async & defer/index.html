@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Async & defer</title>
-  <script src="script1.js"></script>
+  <!-- Async will download the js files along with html content in webpages when it loads no order required-->
+  <!-- Defer will download the multiples js files in order along with html content in webpages when it loads-->
+  <script src="script1.js" async ></script>
+  <script src="script2.js" async ></script>
+  <script src="script3.js" async ></script>
 </head>
 
 <body>
