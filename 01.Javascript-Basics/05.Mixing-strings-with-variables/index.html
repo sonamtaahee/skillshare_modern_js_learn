@@ -9,12 +9,14 @@
 
   <body>
     <h1 id="title">Mixing Strings With Variables</h1>
-    <script>
-      const name = 'Chris';
-      const likes = 'pizza';
+    <h3 id="description">Mixing Strings With Descriptions</h3>
 
-      document.getElementById('title').innerText =
-        'Mixing Strings With Variables';
+    <script>
+      const name = 'Sonam Tashi';
+      const likes = 'pizza';
+     // learn different ways for string interpolation in js
+      document.getElementById('title').innerText = 'I am '  + name + ' and I likes ' + likes;
+      document.getElementById('description').innerText = `I am ${name} and I likes ${likes}`;
     </script>
   </body>
 </html>
