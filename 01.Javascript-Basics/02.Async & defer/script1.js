@@ -1,3 +1,3 @@
-document.addEventListener()
-document.getElementById('title').innerText = 'Javascript'
-document.getElementById('title').style.color = 'red'
+// document.addEventListener()
+document.getElementById('title').innerText = '1'
+document.getElementById('title').style.color = 'yellow'
