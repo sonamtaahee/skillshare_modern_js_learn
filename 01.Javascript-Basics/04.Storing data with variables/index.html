@@ -10,7 +10,16 @@
   <body>
     <h1 id="title">Storing data with variables</h1>
     <script>
-      document.getElementById('title').innerText = 'variables';
+      var newText = 'new test as new variable';
+      newText = 'Updated variables here';
+      let oneText = 'This is let values';
+      const person = {
+        name: 'John',
+        age: 36
+      };
+      person.color = 'green';
+      person.likes = 'pizzas';
+      document.getElementById('title').innerText = person.color;
     </script>
   </body>
 </html>
