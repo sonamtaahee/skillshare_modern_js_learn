@@ -10,7 +10,10 @@
   <body>
     <h1 id="title">Introduction To Arrays & Object Types</h1>
     <script>
-      document.getElementById('title').innerText =
+      // ['age', '26', 'sonam', 11000]
+      let animals = ['dog', 'cat', 'mouse', 'cow', 'fox']
+      let hasDog = animals.includes('dog');
+      document.getElementById('title').innerText = ` You Select ${animals[2]} and has dog ${hasDog}`;
         'Introduction To Arrays & Object Types';
     </script>
   </body>
