@@ -14,13 +14,17 @@
   <script>
     // ARITHMETIC OPERATORS
     // +, -, *, /, %, ++, --
-    const forename = 'Chris'
+    const forename = 'Chris '
     const surname = 'Dixon'
     let number1 = 16
     let number2 = 5
 
-    number1 += number2 // result = 20
-    // document.getElementById('title').innerText =
+    let result  = number1 % number2 // 1
+    let fullName = forename + surname;
+    result ++;
+    let booCheck = number1 % number2 == 0 && number1 == 2;
+
+    document.getElementById('title').innerText = `${fullName}  ${result} ${booCheck}`;
 
     // LOGICAL OPERATORS
     // &&, ||, !

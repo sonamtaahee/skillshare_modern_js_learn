@@ -11,15 +11,21 @@
 <body>
 
   <h1 id="title">Operators: Assignment & comparison</h1>
-  <script>
+  <h1 id="sum">2000</h1>
+<script>
     // ASSIGNMENT OPERATORS
     // =, +=, -+, *=, /=, %=
-    const forename = 'Chris'
-    const surname = 'Dixon'
-    let number1 = 15
+    const forename = 'Sonam'
+    const surname = 'Tashi'
+    let number1 = 17
     let number2 = 5
-
-    // document.getElementById('title').innerText =
+    let sum = number1 + number2;
+    let remainder =  number1 % number2;
+    let great = number1 < number2;
+    let isEqualsTo = number1 == number2;
+    let fullName = forename + ' ' + surname;
+    document.getElementById('title').innerText = fullName;
+    document.getElementById('sum').innerText = sum + remainder;
 
     // COMPARISON OPERATORS
     // ==, !=, ===, !==, >, >=, <, <=
