@@ -9,8 +9,31 @@
 
   <body>
     <h1 id="title">Introduction To Objects</h1>
+    <h1 id="des">Introduction To Objects</h1>
     <script>
-      document.getElementById('title').innerText = 'Introduction To Objects';
+      let user = {
+        name: 'Chris Tashi',
+        role: 'admin',
+        occupation: 'Developer',
+        loggedIn: true,
+        foods: ['PotatoCheese', 'EmaDatshi', 'Bathub']
+      }
+      let users = [
+        {
+          name: 'John Cena',
+          admin: false,
+          occupation: 'Wrestler'
+        },
+        {
+          name: 'Grabrel Tashi',
+          admin: false,
+          occupation: 'Footballer'
+        }
+      ]
+      document.getElementById('title').innerText = user['name']; // bracket notation
+      document.getElementById('des').innerText = user.foods.join(' '); // dot notation
+      console.table(user);
+      console.log(users);
     </script>
   </body>
 </html>
