@@ -10,8 +10,27 @@
   <body>
     <h1 id="title">Introduction To Functions</h1>
     <script>
+      function randomNumber() {
+        alert('Hey')
+      }
+      function dogToHuman(dogAge) { // parameters for this function
+        const humanEquiv = dogAge * 7;
+        return humanEquiv;
+      }
+
       let bread = ['flour', 'yeast', 'salt', 'water'];
       let brownies = ['butter', 'chocolate', 'flour', 'eggs', 'sugar'];
+      // randomNumber()
+      result = dogToHuman(5) // arguments for dog function
+      console.log(result)
+
+      function checkAllergies(recipe, ingredient) {
+        const hasIngredient = recipe.includes(ingredient);
+        return hasIngredient;
+      }
+
+      console.log(checkAllergies(bread, 'flour'));
+      console.log(checkAllergies(brownies, 'eggs'));
     </script>
   </body>
 </html>
