@@ -11,8 +11,25 @@
     <h1 id="title">Modifying Arrays</h1>
     <script>
       let pizza = ['dough', 'sauce', 'cheese'];
-      pizza.push('pepperoni');
+      const added = pizza.push('pepperoni'); // add to array return the size of the array
+      const removed = pizza.pop(); // remove from array return the value of the array removed
+      // unshift(); will add to array at the beginning of the array
+      // shift(); will remove from array at the beginning of the array
+      // pizza.splice(1); remove all except first
+      pizza.splice(1, 2, 'bbq sauce');
+      pizza.sort(); // sort the array
+      let numbers = [1, 23, 23, 4234,234,53535,235623,124121]
+      numbers.sort(function sort(a, b) { // sort the integers/numbers
+        return a - b;
+      });
+
+      // reverse
+      let new_arr = pizza
+      console.log(new_arr.reverse());
+      console.log(numbers);
       console.log(pizza);
+      console.log(added);
+      console.log(removed);
     </script>
   </body>
 </html>
