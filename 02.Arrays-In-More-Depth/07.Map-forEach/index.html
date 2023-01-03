@@ -16,6 +16,23 @@
         { title: 'How to be a ninja', body: 'bla bla bla' },
         { title: 'How to be a ninja part 2', body: 'bla bla bla' },
       ];
+
+      // used for general purpose on arrays and objects
+      numbers.forEach((number, index) => console.log(`number ${index}: ${number * 2}` ));
+
+      posts.forEach(post => console.log(`${post.title.toLocaleUpperCase()}`));
+
+      const old_post = posts
+      .map((post) => post.title.toUpperCase())
+      .filter((value) => value === 'HOW TO BE A NINJA PART 2');
+
+      // chaining is not possible for forEach method
+      const new_post = posts
+      .map((post) => post.title.toUpperCase())
+      .some((value) => value === 'HOW TO BE A NINJA PART 2');
+
+      console.log(new_post);
+      console.log(old_post);
     </script>
   </body>
 </html>

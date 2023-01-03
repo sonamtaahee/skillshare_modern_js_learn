@@ -10,9 +10,21 @@
   <body>
     <h1 id="title">Returning New Values</h1>
     <script>
-      let pizza = ['dough', 'sauce', 'cheese'];
-      const isIncluded = pizza.includes('dough');
+      let pizza = ['dough', 'sauce', 'cheese', 'cheese'];
+      let extras = ['peppers', 'onions'];
+      const isIncluded = pizza.includes('dough'); // did not modify the original
+      const string = pizza.join();
+      console.log(string);
+      console.log(pizza.indexOf('cheese'));
+      console.log(pizza.indexOf('notfounf')); // return -1 if not found
+      console.log(pizza.lastIndexOf('cheese'));
       console.log(pizza, isIncluded);
+      const removedArray = pizza.slice(1, 3); // start and end value
+      console.log(removedArray);
+      // concat will joins two or more arrays
+      const newPizza = pizza.concat(extras);
+      console.log(newPizza);
+      console.log(pizza);
     </script>
   </body>
 </html>
