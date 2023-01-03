@@ -13,7 +13,43 @@
       // admin = full access & permissions
       // author = can publish & manage their own posts
       // subscriber = can only manage their own profile
+      let users = [
+        {
+          user: 1,
+          role: 'admin'
+        },
+        {
+          user: 2,
+          role: 'author'
+        },
+        {
+          user: 3,
+          role: 'subscriber'
+        },
+      ];
+
+      // can use findIndex, filter find and many more methods to the arrays of objects.
+      const admin = users.find(function (user) { // returns single user
+        return user.role === 'admin';
+      });
+
+      const arrow_author = users.filter((user) => user.role === 'author'); // returns array of users
+
+
       let roles = ['admin', 'author', 'subscriber'];
-    </script>
+      let testScores = [117, 99, 122, 109];
+      const aboveAverage = testScores.every(function(number) {
+        return number > 95;
+      });
+      const canPublish = roles.some(function canPublish(role) {
+        return role === 'admin' || role === 'author'
+      });
+
+      console.log(aboveAverage);
+      console.log(canPublish);
+
+      console.log(admin);
+      console.log(arrow_author);
+</script>
   </body>
 </html>
