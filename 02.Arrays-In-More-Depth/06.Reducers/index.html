@@ -11,6 +11,15 @@
     <h1 id="title">Reducers</h1>
     <script>
       let numbers = [72, 33, 108, 222, 6];
+      const all_total = numbers.reduce(total); // loops in all elements and returns combined of all the numbers
+      // reduceRight can do it same with from right to left for each element
+      const average = all_total / numbers.length;
+      function total(total, currentValue) {
+        return total + currentValue;
+      };
+
+      console.log(all_total)
+      console.log(average)
     </script>
   </body>
 </html>
