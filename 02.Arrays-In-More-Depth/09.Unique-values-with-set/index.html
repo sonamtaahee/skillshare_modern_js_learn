@@ -19,6 +19,13 @@
         'hats',
         'bags',
       ];
+      let uniqueCategories = new Set(categories); // helps with duplicate values
+      uniqueCategories.add("jeans");
+      uniqueCategories.delete("hats");
+      const hasShoes = uniqueCategories.has('shoes');
+      // uniqueCategories.clear(); // delete all values
+      console.log(uniqueCategories);
+      console.log(hasShoes);
     </script>
   </body>
 </html>
